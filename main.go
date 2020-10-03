@@ -1,11 +1,64 @@
 package main
 
+// package main 에 대한 생각
+// 라이브러리, 모듈, 프레임워크, 패키지 등은 프로그램을 만드는 기능들을 묶어놓은 것
+// 라이브러리, 모듈, 패키지 : 기능을 묶어놓은것
+// 프레임워크 : 기능 묶음, 사용방법, 절차까지 포함 -> 메뉴얼 대로 써야함
+
+// 패키지 이름 선언 : main
+// main은 약속된 말로 프로그램이 처음 load될 때의 시작점을 뜻한다.
+// 반면, 라이브러리는 시작점이 없다 - 기능만 제공하기 때문에
+
+// 패키지를 가져온다.
+// go에서 제공하는 기본 표준패키지와, 외부에서 제공하는 외부패키지가 있다.
 import (
-	"fmt"
+	"fmt" // 표준 패키지
 	"strings"
 
 	"github.com/hyehyeong/learnGo/something"
 )
+
+func main() {
+	fmt.Println("Hello World")
+	something.SayHello()
+
+	// 대문자가 아니라 에러가 남
+	// something.sayBye()
+
+	// Go가 알아서 타입을 정해줌
+	// 축약형은 function 안에서만 가능
+	age := 12
+
+	var name bool = false
+	name = true
+
+	fmt.Println(name, age)
+
+	fmt.Println(multiply(2, 2))
+
+	totalLength, upperName := lenAndUpper("nico")
+	fmt.Println(totalLength, upperName)
+
+	repeatMe("nico", "lynn", "da", "marl", "flynn")
+
+	total := superAdd(1, 2, 3, 4, 5, 6)
+	fmt.Println(total)
+
+	fmt.Println(canIDrink(16))
+
+	a := 2
+	b := a
+	a = 10
+	fmt.Println(a, b)
+
+	pointer()
+
+	array()
+
+	mapExample()
+
+	structExample()
+}
 
 // 패키지 함수가 대문자인 이유
 // Go에서는 function을 export하기 위해서는 대문자로 해야 하기 때문
@@ -103,46 +156,4 @@ func structExample() {
 	// 안티패턴 -> nico := person{"nico", 18, favFood}
 	nico := person{name: "nico", age: 18, favFood: favFood}
 	fmt.Println(nico.name, nico.age, nico.favFood)
-}
-
-func main() {
-	fmt.Println("Hello World")
-	something.SayHello()
-
-	// 대문자가 아니라 에러가 남
-	// something.sayBye()
-
-	// Go가 알아서 타입을 정해줌
-	// 축약형은 function 안에서만 가능
-	age := 12
-
-	var name bool = false
-	name = true
-
-	fmt.Println(name, age)
-
-	fmt.Println(multiply(2, 2))
-
-	totalLength, upperName := lenAndUpper("nico")
-	fmt.Println(totalLength, upperName)
-
-	repeatMe("nico", "lynn", "da", "marl", "flynn")
-
-	total := superAdd(1, 2, 3, 4, 5, 6)
-	fmt.Println(total)
-
-	fmt.Println(canIDrink(16))
-
-	a := 2
-	b := a
-	a = 10
-	fmt.Println(a, b)
-
-	pointer()
-
-	array()
-
-	mapExample()
-
-	structExample()
 }
