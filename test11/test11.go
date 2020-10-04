@@ -1,4 +1,4 @@
-package main
+package test11
 
 import "fmt"
 
@@ -11,7 +11,7 @@ import "fmt"
 // 용어1 : capacity : 컴퓨터가 할당한 공간
 // 용어2 : length : 사용하고 있는 공간
 
-func main() {
+func Test11() {
 	// 동적배열 사용
 	a := []int{1, 2, 3}
 	fmt.Printf("len(a) = %d\n", len(a)) // 3

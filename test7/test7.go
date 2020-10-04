@@ -1,8 +1,8 @@
-package main
+package test7
 
 import "fmt"
 
-func main() {
+func Test7() {
 	// 배열의 길이는 Type크기 * 개수
 	// String은 1byte배열로 나타낼 수 있지만
 	// rune의 배열로 나타낼 수도 있다(UTF-8의 배열)

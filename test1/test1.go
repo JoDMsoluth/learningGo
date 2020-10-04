@@ -1,4 +1,4 @@
-package main
+package test1
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/hyehyeong/learnGo/test1/mydict"
 )
 
-func main() {
+func Test1() {
 	account := accounts.NewAccount("nico")
 	fmt.Println(account)
 	account.Deposit(10)

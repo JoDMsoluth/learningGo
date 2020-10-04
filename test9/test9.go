@@ -1,4 +1,4 @@
-package main
+package test9
 
 import "fmt"
 
@@ -24,7 +24,7 @@ func (s *Student) InputSunguk(class, grade string) {
 	s.class, s.grade = class, grade
 }
 
-func main() {
+func Test9() {
 	var a int = 1
 	var p *int
 

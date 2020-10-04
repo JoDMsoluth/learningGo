@@ -1,4 +1,4 @@
-package main
+package test10
 
 import (
 	"fmt"
@@ -20,7 +20,7 @@ type Result struct {
 	balls   int
 }
 
-func main() {
+func Test10() {
 	// 항상 변하는 값을 만들기 위해 seed를 넣어준다.
 	rand.Seed(time.Now().UnixNano())
 	// 무작위 숫자 3개를 만든다.

@@ -1,8 +1,11 @@
-package main
+package test16
 
-import "github.com/joDmsoluth/learningGo/dataStruct"
+import (
+	"github.com/JoDMsoluth/learningGo/dataStruct"
+)
 
-func main() {
+// double linkedList.go
+func Test16() {
 	list := &dataStruct.DoubleLinkedList{}
 	list.AddNode(0)
 

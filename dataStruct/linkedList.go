@@ -49,11 +49,41 @@ func (l *DoubleLinkedList) AddNode(val int) {
 	l.Tail.Prev = prev
 }
 
+func (l *DoubleLinkedList) Back() int {
+	if l.tail != nil {
+		return l.Tail.Val
+	}
+	return 0
+}
+func (l *DoubleLinkedList) Front() int {
+	if l.Root != nil {
+		return l.Root.Val
+	}
+	return 0
+}
+func (l *DoubleLinkedList) PopBack() {
+	if l.Tail == nil {
+		return
+	}
+	l.RemoveNode(l.Tail)
+}
+func (l *DoubleLinkedList) PopFront() {
+	if l.Root == nil {
+		return
+	}
+	l.RemoveNode(l.Root)
+}
+func (l *DoubleLinkedList) Empty() bool {
+	return l.Root == nil
+}
+
 func (l *DoubleLinkedList) RemoveNode(node *Node) {
 	// 루트를 지울 때
 	if node == l.Root {
 		l.Root = l.Root.Next
-		l.Root.Prev = nil
+		if l.Root != nil {
+			l.Root.Prev = nil
+		}
 		node.Next = nil
 		return
 	}

@@ -1,4 +1,4 @@
-package main
+package test8
 
 import "fmt"
 
@@ -30,7 +30,7 @@ func (s *Student) InputSungjuk(name string, grade string) {
 // 	fmt.Println(s.sungjuk)
 // }
 
-func main() {
+func Test8() {
 	var s Student
 	s.name = "철수"
 	s.class = 1

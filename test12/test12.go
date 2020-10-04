@@ -1,11 +1,11 @@
-package main
+package test12
 
 import "fmt"
 
 // 배열을 slice 짜른다. ex) a[start : end]
 // start index 에서 시작해서 end index까지인데 end는 포함하지 않는다.
 // slice는 새로 배열을 새로 만드는 것이 아니고 array의 부분은 가리키는 것이다.
-func main() {
+func Test12() {
 	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	b := a[4:8] // 5, 6, 7, 8
 	c := a[4:]  // 5 ~ 10

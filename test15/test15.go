@@ -1,4 +1,4 @@
-package main
+package test15
 
 import "fmt"
 
@@ -59,7 +59,7 @@ func (l *LinkedList) RemoveNode(node *Node) {
 	node.next = nil
 }
 
-func main() {
+func Test15() {
 	list := &LinkedList{}
 	list.AddNode(0)
 

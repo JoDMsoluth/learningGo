@@ -1,4 +1,4 @@
-package main
+package test14
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func (t *Student) SetName(newName string) {
 	t.name = newName
 }
 
-func main() {
+func Test14() {
 	arr1 := []int{1, 2, 3}
 
 	// 배열은 주소를 복사한다.

@@ -1,4 +1,4 @@
-package main
+package test4
 
 import (
 	"bufio" // 버퍼에 관한 거
@@ -9,7 +9,7 @@ import (
 	// 문자열에 대한 거
 )
 
-func main() {
+func Test4() {
 	fmt.Println("숫자를 입력하세요.")
 	reader := bufio.NewReader(os.Stdin)
 	line, _ := reader.ReadString('\n') // 한줄 읽어온다.

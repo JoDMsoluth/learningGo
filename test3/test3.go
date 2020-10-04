@@ -1,8 +1,8 @@
-package main
+package test3
 
 import "fmt"
 
-func main() {
+func Test3() {
 	a := 4
 	b := 2
 

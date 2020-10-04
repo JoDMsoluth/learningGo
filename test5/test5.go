@@ -1,4 +1,4 @@
-package main
+package test5
 
 import (
 	// 버퍼에 관한 거
@@ -7,7 +7,7 @@ import (
 	// 문자열에 대한 거
 )
 
-func main() {
+func Test5() {
 	var i int
 	for i < 10 {
 		fmt.Println(i)

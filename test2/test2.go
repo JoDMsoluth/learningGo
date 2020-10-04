@@ -1,4 +1,4 @@
-package main
+package test2
 
 import (
 	"errors"
@@ -14,7 +14,7 @@ type requestResult struct {
 
 var errRequestFailed = errors.New("Request Failed")
 
-func main() {
+func Test2() {
 
 	// 초기화 하지 않은 map은 따로 변경할 수 없다. 때문에 make 사용
 	var results = make(map[string]string)

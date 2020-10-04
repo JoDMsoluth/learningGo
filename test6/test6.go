@@ -1,4 +1,4 @@
-package main
+package test6
 
 import "fmt"
 
@@ -6,7 +6,7 @@ func add(x int, y int) int {
 	return x + y
 }
 
-func main() {
+func Test6() {
 
 	// 반복문
 	for i := 0; i < 10; i++ {

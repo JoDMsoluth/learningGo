@@ -1,4 +1,4 @@
-package main
+package test13
 
 import "fmt"
 
@@ -11,7 +11,7 @@ import "fmt"
 // }
 //
 
-func main() {
+func Test13() {
 	var s []int
 	fmt.Printf("S주소 : %p\n", s)
 

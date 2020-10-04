@@ -1,3 +1,3 @@
-module github.com/joDmsoluth/learningGo
+module github.com/JoDMsoluth/learningGo
 
 go 1.15
