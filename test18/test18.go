@@ -5,26 +5,35 @@ import (
 
 	"github.com/JoDMsoluth/learningGo/dataStruct"
 )
+
 // DFS 만드는 법
 // 1. 재귀호출
 // 2. 스택
 
+// BFS 만드는 방법
+// 1. 큐 - 루트를 튜에 넣는다.
+// -> 루트를 뺀다.
+// -> 꺼낸 애(루트)의 자식들을 넣는다.
+// -> 루트의 첫번째 자식을 뺀다.
+// -> 꺼낸 애(루트의 첫번째 자식)의 자식들을 넣는다.
+// 2. 스택
+
 func Test18() {
-	tree := dataStruct.Tree()
+	tree := dataStruct.Tree{}
 	val := 1
 	tree.AddNode(1)
 	val++
 
 	// 루트 노드에 1, 2, 3 자식 노드추가
-	for i:=-; i<3; i++ {
+	for i := 0; i < 3; i++ {
 		tree.Root.AddNode(val)
 		val++
 	}
 
 	// 각 노드의 자식을 2개씩 추가
-	for i:=0; i<len(tree.Root.Childs); i++ {
-		for j:=0; j<2; i++ {
-			tree.Root.Chilids[i].AddNode(val)
+	for i := 0; i < len(tree.Root.Childs); i++ {
+		for j := 0; j < 2; j++ {
+			tree.Root.Childs[i].AddNode(val)
 			val++
 		}
 	}
@@ -39,6 +48,7 @@ func Test18() {
 	// 루트의 자식들을 스택에서 출력
 	// 2-3 루트의 첫번째 자식의 자식들을 스택에 넣는다. .....
 	tree.DFS2()
+	fmt.Println()
 
 	tree.BFS1()
 

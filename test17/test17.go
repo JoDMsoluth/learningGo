@@ -26,8 +26,9 @@ func Test17() {
 		queue2.Push(i)
 	}
 
+	fmt.Println()
 	for !queue2.Empty() {
 		val := queue2.Pop()
-		fmt.Println("%d ->", val)
+		fmt.Printf("%d ->", val)
 	}
 }

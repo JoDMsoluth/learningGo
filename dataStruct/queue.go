@@ -1,20 +1,20 @@
 package dataStruct
 
 type Queue struct {
-	ll *LinkedList
+	ll *DoubleLinkedList
 }
 
 func NewQueue() *Queue {
-	return &Queue{li: &LinkedList{}}
+	return &Queue{ll: &DoubleLinkedList{}}
 }
 
 func (q *Queue) Push(val int) {
 	q.ll.AddNode(val)
 }
 
-func (q *Queue) Pop(val int) {
+func (q *Queue) Pop() int {
 	front := q.ll.Front()
-	q.ll.AddNode(val)
+	q.ll.PopFront()
 	return front
 }
 

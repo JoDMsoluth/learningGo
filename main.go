@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/JoDMsoluth/learningGo/test29"
+)
+
 func main() {
 	// test0.Test0()
 	// test1.Test1()
@@ -19,6 +23,14 @@ func main() {
 	// test15.Test15()
 	// test16.Test16()
 	// test17.Test17()
-	test18.test18()
+	// test18.Test18()
 	// test19.Test19()
+	// test20.Test20()
+	// test22.Test22()
+	// test23.Test23()
+	// test24.Test24()
+	// test25.Method()
+	// test26.Test26()
+	// test27.Test27()
+	test29.Test29()
 }

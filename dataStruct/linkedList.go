@@ -50,7 +50,7 @@ func (l *DoubleLinkedList) AddNode(val int) {
 }
 
 func (l *DoubleLinkedList) Back() int {
-	if l.tail != nil {
+	if l.Tail != nil {
 		return l.Tail.Val
 	}
 	return 0

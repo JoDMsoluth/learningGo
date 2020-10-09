@@ -1,11 +1,11 @@
 package dataStruct
 
 type Stack struct {
-	ll *LinkedList
+	ll *DoubleLinkedList
 }
 
 func NewStack() *Stack {
-	return &Stack{ll: &LinkedList{}}
+	return &Stack{ll: &DoubleLinkedList{}}
 }
 
 func (s *Stack) Push(val int) {
